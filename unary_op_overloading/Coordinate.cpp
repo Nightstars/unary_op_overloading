@@ -14,6 +14,23 @@ Coordinate::Coordinate(int x, int y)
 //	return *this;
 //}
 
+Coordinate& Coordinate::operator++()
+{
+	// TODO: 在此处插入 return 语句
+	m_iX++;
+	++m_iX;
+	return *this;
+}
+
+Coordinate Coordinate::operator++(int)
+{
+	// TODO: 在此处插入 return 语句
+	Coordinate old(*this);
+	this->m_iX++;
+	this->m_iY++;
+	return old;
+}
+
 int Coordinate::getX()
 {
 	return m_iX;

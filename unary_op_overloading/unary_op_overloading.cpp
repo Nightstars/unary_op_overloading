@@ -14,6 +14,21 @@ int main()
     Coordinate coor2(2, 4);
     -(-coor2);
     cout << coor2.getX() << "," << coor2.getY() << endl;
+    cout << endl;
+
+    Coordinate coor3(5, 6);
+    cout << coor3.getX() << "," << coor3.getY() << endl;
+    ++coor3;
+    cout << coor3.getX() << "," << coor3.getY() << endl;
+    cout << endl;
+
+    Coordinate coor4(7, 8);
+    cout << coor4.getX() << "," << coor4.getY() << endl;
+
+    cout << (coor4++).getX() << ",";
+    cout << (coor4++).getY() << endl;
+
+    cout << coor4.getX() << "," << coor4.getY() << endl;
 
     system("pause");
     return 0;
